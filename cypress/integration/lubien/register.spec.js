@@ -40,5 +40,6 @@ describe('Rejestracja użytkownika nie instniejącego w bazie', () => {
 
   it('5.Przejście do logownaia ', () => {
         cy.contains('SWITCH TO SIGNIN').click()
+        cy.window().scrollTo('top', { easing: 'linear' })
     });
 });

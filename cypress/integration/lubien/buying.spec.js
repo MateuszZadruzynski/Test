@@ -48,6 +48,7 @@ it('2.Otwieranie strony sklepu', () => {
     else
     {
       cy.log('Pomyślnie dodano produktu do koszyka')
+      cy.window().scrollTo('top', { easing: 'linear' })
     }
   });
 
