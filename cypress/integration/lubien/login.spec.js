@@ -16,5 +16,16 @@ describe('Logowanie użytkownika', () => {
         cy.wait(500)
         cy.contains('Continue').click()
         cy.window().scrollTo('top', { easing: 'linear' })
+
+        if(cy.contains("No user found with this email"))
+        {
+          throw new Error("Błąd w logowaniu")
+        }
+        else
+        {
+          return true;
+        }
       });
+
+
 });
