@@ -33,7 +33,7 @@ describe('Testowanie linków na stronie',() => {
     it("Blog", () => {
         cy.get("a:contains(BLOG)").should($a => {
             const message = $a.parent().parent().text();
-            expect($a, message).to.not.have.attr("href", "/blog");
+            expect($a, message).to.not.have.attr("href", "/");
       });
     });
     it("Warunki świadczenia usług", () => {
