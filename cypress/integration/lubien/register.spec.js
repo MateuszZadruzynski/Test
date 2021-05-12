@@ -13,7 +13,7 @@ describe('Rejestracja użytkownika nie instniejącego w bazie', () => {
     });
 
     it('4.Rejestracja użytkownika', () => {
-        cy.get('#email').type('CypressTest@gmail.com') 
+        cy.get('#email').type('cypresstest@test.co.uk') 
         cy.wait(500)
         cy.get('#password').type('zaq1@WSX')
         cy.wait(500)
@@ -33,7 +33,7 @@ describe('Rejestracja użytkownika nie instniejącego w bazie', () => {
         cy.wait(500)
         cy.get('input[name="address.county"]').type('Poland')
         cy.wait(500)
-        cy.get('input[name="address.postCode"]').type('GB455DU')
+        cy.get('input[name="address.postCode"]').type('GB45 5DU')
         cy.wait(500)
         cy.contains('Continue').click()
   });
